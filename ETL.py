@@ -13,9 +13,6 @@ import json
 import logging
 import os
 
-access_key_id = 'AKIAIAS55T2BVOAPKADQ'
-secret_access_key = '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'
-
 s3 = boto3.client('s3', aws_access_key_id=access_key_id, aws_secret_access_key=secret_access_key, region_name='us-west-2')
 
 def download_ev_data(ev_data_tmp_path):
