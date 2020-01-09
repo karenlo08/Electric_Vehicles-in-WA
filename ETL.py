@@ -6,14 +6,23 @@ import requests
 import json
 import csv
 
-#from __future__ import unicode_literals
 import pandas as pd
 import tweepy 
 import json
 import logging
 import os
 
-s3 = boto3.client('s3', aws_access_key_id=access_key_id, aws_secret_access_key=secret_access_key, region_name='us-west-2')
+from bs4 import BeautifulSoup
+
+aws_access_key_id = os.getenv("AWS_ACCESS_KEY_ID")
+aws_secret_access_key = os.getenv("AWS_SECRET_ACCESS_KEY")
+
+url = "https://www.cars.com/research/tesla-model_3-2018/consumer-reviews/?pg=1&nr=250"
+url2 = "https://www.cars.com/research/nissan-leaf-2018/consumer-reviews/?pg=1&nr=50"
+
+s3 = boto3.client('s3' ,region_name='us-west-2')
+
+aws_secret_access_key
 
 def download_ev_data(ev_data_tmp_path):
     response = requests.get('https://data.wa.gov/api/views/f6w7-q2d2/rows.csv?accessType=DOWNLOAD')
@@ -82,16 +91,43 @@ def tweets_to_df(all_tweets):
 
 
 
+def web_scrapping_car_reviews(url):
+    page = requests.get(url)
+    soup = BeautifulSoup(page.text, 'html.parser')
+    domains = soup.find_all("p", class_="review-card-text")
+
+    list_reviews = []
+    for domain in domains:
+        list_reviews.append((domain.text.replace('\n','')).strip())
+   
+    filename= "/tmp/" + url.split('/')[4] +".csv"
+    with open(filename, "w", newline="") as f:
+        writer = csv.writer(f)
+        for reviews in list_reviews:
+            writer.writerow([reviews])
+
+
 def setup():
     bucket_name = 'karen.bucket'
     
     ev_data_tmp_path = '/tmp/ev_data.csv'
     twitter_data_tmp_path = '/tmp/tweets_by_green_cars.csv'
+    tesla_reviews_data_tmp_path = "/tmp/" + url.split('/')[4] +".csv"
+    leaf_reviews_data_tmp_path = "/tmp/" + url2.split('/')[4] +".csv"
     
     download_ev_data(ev_data_tmp_path)
-    tweets_to_df(connect_twitter_api())#check
+    print('download_ev_data')
+    tweets_to_df(connect_twitter_api())
+    print('tweets_to_df')
+    web_scrapping_car_reviews(url)
+    print('web_scrapping_car_reviews')
+    web_scrapping_car_reviews(url2) 
+    print('web_scrapping_car_reviews')
     
     upload_file(ev_data_tmp_path, bucket_name, 'json/ev_data.csv')
+    print('upload_file_ev')
     upload_file(twitter_data_tmp_path, bucket_name, 'json/twitter_data.csv')
+    upload_file(twitter_data_tmp_path, bucket_name, 'json/tesla_reviews_data.csv')
+    upload_file(twitter_data_tmp_path, bucket_name, 'json/leaf_reviews_data.csv')
 
 setup()
