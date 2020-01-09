@@ -119,4 +119,4 @@ plot(ev)
 
 ![alt text][logo]
 
-[logo]: https://github.com/karenlo08/EV/visualizations/correlation.jpg "correlation"
+![logo]: https://github.com/karenlo08/EV/visualizations/correlation.jpg "correlation"
