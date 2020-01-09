@@ -117,4 +117,4 @@ plot(ev)
     (0.59373613499395383, 3.7922998932025516e-58, 0.53917974442865069, 0.64333031482841563)
 
 
-![text]: (../master/visualizations/correlation.jpg)
+<img src="/visualizations/correlation.jpg"/>
