@@ -92,10 +92,15 @@ def plot_with_animation(df,arr):
     fig.show()
     
     
+def main():
+    df, arr = prepare_source_to_plot(df2017)
+    df2, arr2 = prepare_source_to_plot(df2018)
+    plot_with_animation(df,arr)
+    plot_with_animation(df2,arr2)
+
+
+if __name__ == '__main__':
+    main()
     
 
-df, arr = prepare_source_to_plot(df2017)
-df2, arr2 = prepare_source_to_plot(df2018)
 
-plot_with_animation(df,arr)
-plot_with_animation(df2,arr2)
