@@ -89,7 +89,7 @@ print(pearsonr(median_income_norm['Median_commute'].values,median_income_norm['T
 
 ## Prediction Model
 
-<img src="/visualizations/prediction.jpng"/>
+<img src="/visualizations/prediction.png"/>
 
 # Exploratory Data Analysis
 ## Top 3 WA Electric Vehicles by Year
