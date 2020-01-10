@@ -89,15 +89,15 @@ print(pearsonr(median_income_norm['Median_commute'].values,median_income_norm['T
 
 ## Prediction Model
 
-<img src="/visualizations/prediction.jpg"/>
+<img src="/visualizations/prediction.jpng"/>
 
 # Exploratory Data Analysis
 ## Top 3 WA Electric Vehicles by Year
 
-<img src="/visualizations/pie1.jpg"/>
-<img src="/visualizations/pie2.jpg"/>
-<img src="/visualizations/pie3.jpg"/>
-<img src="/visualizations/pie.jpg"/>
+<img src="/visualizations/pie1.png"/>
+<img src="/visualizations/pie2.png"/>
+<img src="/visualizations/pie3.png"/>
+<img src="/visualizations/pie.png"/>
 
 ## Why people are choosing Tesla and Nissan Leaf? 
 
@@ -106,14 +106,14 @@ print(pearsonr(median_income_norm['Median_commute'].values,median_income_norm['T
 2018 Tesla Model 3 Reviews
 
 
-<img src="/visualizations/leaf_review.jpg"/>
-<img src="/visualizations/pie1_tesla.jpg"/>
+<img src="/visualizations/leaf_review.png"/>
+<img src="/visualizations/pie1_tesla.png"/>
 
 2018 Nissan Leaf Reviews
 
-<img src="/visualizations/tesla_review.jpg"/>
-<img src="/visualizations/pie1_leaf.jpg"/>
+<img src="/visualizations/tesla_review.png"/>
+<img src="/visualizations/pie1_leaf.png"/>
 
 ### @GreenCarReports Tweets Analysis
 
-<img src="/visualizations/gree_cars_review.jpg"/>
+<img src="/visualizations/gree_cars_review.png"/>
