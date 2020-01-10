@@ -97,7 +97,7 @@ print(pearsonr(median_income_norm['Median_commute'].values,median_income_norm['T
 <img src="/visualizations/pie1.png"/>
 <img src="/visualizations/pie2.png"/>
 <img src="/visualizations/pie3.png"/>
-<img src="/visualizations/pie.png"/>
+<img src="/visualizations/pie4.png"/>
 
 ## Why people are choosing Tesla and Nissan Leaf? 
 
@@ -116,4 +116,4 @@ print(pearsonr(median_income_norm['Median_commute'].values,median_income_norm['T
 
 ### @GreenCarReports Tweets Analysis
 
-<img src="/visualizations/gree_cars_review.png"/>
+<img src="/visualizations/green_cars_review.png"/>
