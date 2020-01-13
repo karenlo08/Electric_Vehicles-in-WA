@@ -94,10 +94,7 @@ print(pearsonr(median_income_norm['Median_commute'].values,median_income_norm['T
 # Exploratory Data Analysis
 ## Top 3 WA Electric Vehicles by Year
 
-<img src="/visualizations/pie1.png"/>
-<img src="/visualizations/pie2.png"/>
-<img src="/visualizations/pie3.png"/>
-<img src="/visualizations/pie4.png"/>
+<img src="/visualizations/top3.png"/>
 
 ## Why people are choosing Tesla and Nissan Leaf? 
 
@@ -107,12 +104,12 @@ print(pearsonr(median_income_norm['Median_commute'].values,median_income_norm['T
 
 
 <img src="/visualizations/leaf_review.png"/>
-<img src="/visualizations/pie1_tesla.png"/>
+<img src="/visualizations/car__tesla_reviews_bar.png"/>
 
 2018 Nissan Leaf Reviews
 
 <img src="/visualizations/tesla_review.png"/>
-<img src="/visualizations/pie1_leaf.png"/>
+<img src="/visualizations/car__tesla_reviews_bar.png"/>
 
 ### @GreenCarReports Tweets Analysis
 
