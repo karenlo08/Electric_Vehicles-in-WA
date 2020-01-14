@@ -99,17 +99,17 @@ print(pearsonr(median_income_norm['Median_commute'].values,median_income_norm['T
 
 <img src="/visualizations/top3.png"/>
 
-## Why people are choosing Tesla and Nissan Leaf? 
+# Why people are choosing Tesla and Nissan Leaf? 
 
-### Cars.com Buyer's Reviews Analysis
+## Cars.com Buyer's Reviews Analysis
 
-2018 Tesla Model 3 Reviews
+### 2018 Tesla Model 3 Reviews
 
 <img src="/visualizations/car__tesla_reviews_bar.png"/>
 <img src="/visualizations/leaf_review.png"/>
 
 
-2018 Nissan Leaf Reviews
+### 2018 Nissan Leaf Reviews
 
 <img src="/visualizations/car__tesla_reviews_bar.png"/>
 <img src="/visualizations/tesla_review.png"/>
