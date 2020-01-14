@@ -105,14 +105,15 @@ print(pearsonr(median_income_norm['Median_commute'].values,median_income_norm['T
 
 2018 Tesla Model 3 Reviews
 
-
-<img src="/visualizations/leaf_review.png"/>
 <img src="/visualizations/car__tesla_reviews_bar.png"/>
+<img src="/visualizations/leaf_review.png"/>
+
 
 2018 Nissan Leaf Reviews
 
-<img src="/visualizations/tesla_review.png"/>
 <img src="/visualizations/car__tesla_reviews_bar.png"/>
+<img src="/visualizations/tesla_review.png"/>
+
 
 ### @GreenCarReports Tweets Analysis
 
