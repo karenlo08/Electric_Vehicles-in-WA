@@ -115,6 +115,6 @@ print(pearsonr(median_income_norm['Median_commute'].values,median_income_norm['T
 <img src="/visualizations/tesla_review.png"/>
 
 
-### @GreenCarReports Tweets Analysis
+## @GreenCarReports Tweets Analysis
 
 <img src="/visualizations/green_cars_review.png"/>
