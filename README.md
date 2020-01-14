@@ -15,11 +15,12 @@
 - [Setup](#setup)
 
 ## Inspiration
-This project is simple Lorem ipsum dolor generator.
+There is 53,818 electric vehicles registered in WA state. This exploratory data analysis tries to understand who are the E.V costumers and identify possible electric vehicles buyers. To acomplish this, I needed to understand the EV most populated zip codes with their respective demographics data. I focus on household income level and commutes times: Does tend to own a electric car is correlated to how much an household earn and how much an household commute to work? 
+Also, during my analysis I wanted to know why E.V drivers were choosing certain models over others and how were they reacting about their products through tweets and reviews.
+
 
 ## Technologies
-* S3
-* Boto3
+* S3, Boto3
 * Numpy, Pandas, Scipy, Sklearn
 * MatplotLib, Seaborn, Plotly
 * Tweepy
