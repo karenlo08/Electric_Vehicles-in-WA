@@ -95,6 +95,13 @@ print(pearsonr(median_income_norm['Median_commute'].values,median_income_norm['T
 <img src="/visualizations/prediction.png"/>
 
 # Exploratory Data Analysis
+
+## Electric Vehicle Population Map
+
+filename = 'visualizations/scattermapbox.html'
+plotly.offline.plot(fig, filename=filename)
+IPython.display.display(IPython.display.IFrame(src=filename, width=1200, height=800))
+
 ## Top 3 WA Electric Vehicles by Year
 
 <img src="/visualizations/top3.png"/>
