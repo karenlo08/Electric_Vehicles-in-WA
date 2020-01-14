@@ -25,7 +25,7 @@ Also, during my analysis I wanted to know why E.V drivers were choosing certain 
 * MatplotLib, Seaborn, Plotly
 * Tweepy
 
-<img src="/visualizations/tech.jpg"/>
+<img src="/visualizations/tech.png"/>
 
 ## Hypothesis Testing
 #### Does a higher income or lower income relates to having more or less electric cars?  Higher commutes times can be a contribuitor to buy a electric car?
