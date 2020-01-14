@@ -96,7 +96,8 @@ print(pearsonr(median_income_norm['Median_commute'].values,median_income_norm['T
 
 # Exploratory Data Analysis
 
-<iframe src='https://karenlo08.github.io/EV/'> </iframe>
+## Electric Vehicles Population Map
+https://karenlo08.github.io/EV/
 
 
 ## Top 3 WA Electric Vehicles by Year
