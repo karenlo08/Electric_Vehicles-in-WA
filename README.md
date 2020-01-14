@@ -88,7 +88,7 @@ print(pearsonr(median_income_norm['Median_commute'].values,median_income_norm['T
 
 2. There is a weak negative correlation between commute times and getting an electric car. Also, the p-value is greater than our alpha, so we fail to reject the Null hypothesis.
 
-<img src="/visualizations/correlation.jpg"/>
+<img src="/visualizations/correlation_table.jpg"/>
 
 ## Prediction Model
 
