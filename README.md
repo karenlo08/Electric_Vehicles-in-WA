@@ -16,7 +16,6 @@
 
 ## Inspiration
 There is 53,818 electric vehicles registered in WA state. This exploratory data analysis tries to understand who are the E.V costumers and identify possible electric vehicles buyers. To acomplish this, I needed to understand the EV most populated zip codes with their respective demographics data. I focus on household income level and commutes times: Does tend to own a electric car is correlated to how much an household earn and how much an household commute to work? 
-Also, during my analysis I wanted to know why E.V drivers were choosing certain models over others and how were they reacting about their products through tweets and reviews.
 
 
 ## Technologies and Data Sources
@@ -96,6 +95,7 @@ print(pearsonr(median_income_norm['Median_commute'].values,median_income_norm['T
 <img src="/visualizations/correlation_table.png"/>
 
 # Why people are choosing Tesla and Nissan Leaf? 
+During my analysis I wanted to know why E.V drivers were choosing certain models over others and how were they reacting about their products through tweets and reviews. In this section, I web scrapped cars.com to obtain reviews from Tesla and Leaf, whom were the most popular E.V in WA. Also, I create a connector to Twitter API to get tweets from a @GreenCarsReports, an account where electric cars news are posted. The goal was recognize the polarity of the reviews, set a threshhold and classify them in bad, good or neutral.
 
 ## @GreenCarReports Tweets Analysis
 
@@ -114,8 +114,6 @@ df = df[cols]
 ```
 <img src="/visualizations/polarity.png"/>
 
-<img src="/visualizations/green_cars_review.png"/>
-
 
 ## Cars.com Buyer's Reviews Analysis
 ### 2018 Tesla Model 3 Reviews
@@ -125,5 +123,4 @@ df = df[cols]
 <img src="/visualizations/car__tesla_reviews_bar.png"/>
 
 
-<img src="/visualizations/tesla_review.png"/>
-<img src="/visualizations/leaf_review.png"/>
+#Thanks for reading!
