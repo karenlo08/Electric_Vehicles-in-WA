@@ -1,5 +1,5 @@
 
-# Electric Vehicles in WA
+# Electric Vehicles in WA: Exploratory Data Analysis and NLP through Sentiment Analysis.
 
 ## Table of contents
 - [Inspiration](#general-info)
@@ -27,7 +27,6 @@ Also, during my analysis I wanted to know why E.V drivers were choosing certain 
 * MatplotLib, Seaborn, Plotly
 
 <img src="/visualizations/tech.png"/>
-
 
 # Exploratory Data Analysis
 
@@ -98,22 +97,33 @@ print(pearsonr(median_income_norm['Median_commute'].values,median_income_norm['T
 
 # Why people are choosing Tesla and Nissan Leaf? 
 
-Through the implementation of Natural Language processing
-
-## Cars.com Buyer's Reviews Analysis
-
-### 2018 Tesla Model 3 Reviews
-
-<img src="/visualizations/car__tesla_reviews_bar.png"/>
-<img src="/visualizations/leaf_review.png"/>
-
-
-### 2018 Nissan Leaf Reviews
-
-<img src="/visualizations/car__tesla_reviews_bar.png"/>
-<img src="/visualizations/tesla_review.png"/>
-
-
 ## @GreenCarReports Tweets Analysis
 
+```
+def detect_polarity(text):
+    return TextBlob(text).sentiment.polarity
+
+df['polarity'] = df['review'].apply(detect_polarity)
+df['polarity_neutral'] = df['polarity'].apply(lambda x: True if ((x > 0)&(x<=0.1)) else False)
+df['polarity_negative'] = df['polarity'].apply(lambda x: True if x <= 0 else False)
+df['polarity_positive'] = df['polarity'].apply(lambda x: True if x > 0.1 else False)
+df['blob'] = df['review'].apply(lambda x: TextBlob(x).noun_phrases)
+
+cols = ['blob','polarity','polarity_negative','polarity_positive','polarity_neutral','review']
+df = df[cols]
+```
+<img src="/visualizations/polarity.png"/>
+
 <img src="/visualizations/green_cars_review.png"/>
+
+
+## Cars.com Buyer's Reviews Analysis
+### 2018 Tesla Model 3 Reviews
+<img src="/visualizations/car__tesla_reviews_bar.png"/>
+
+### 2018 Nissan Leaf Reviews
+<img src="/visualizations/car__tesla_reviews_bar.png"/>
+
+
+<img src="/visualizations/tesla_review.png"/>
+<img src="/visualizations/leaf_review.png"/>
