@@ -122,5 +122,6 @@ df = df[cols]
 ### 2018 Nissan Leaf Reviews
 <img src="/visualizations/car__tesla_reviews_bar.png"/>
 
+You can check here for more visualizations and my thinking process on Sentiment Analysis here: https://github.com/karenlo08/EV/blob/master/Sentiment_Analysis.ipynb
 
-#Thanks for reading!
+# Thanks for reading!
