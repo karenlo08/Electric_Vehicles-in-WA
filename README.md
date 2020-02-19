@@ -90,10 +90,6 @@ print(pearsonr(median_income_norm['Median_commute'].values,median_income_norm['T
 
 <img src="/visualizations/correlation_table.jpg"/>
 
-## Prediction Model
-
-<img src="/visualizations/prediction.png"/>
-
 # Exploratory Data Analysis
 
 ## Electric Vehicles Population Map
