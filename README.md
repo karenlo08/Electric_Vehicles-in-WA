@@ -21,24 +21,33 @@ Also, during my analysis I wanted to know why E.V drivers were choosing certain 
 
 ## Technologies and Data Sources
 * S3, Boto3
+* Tweepy
+* NLTK, TextBlob
 * Numpy, Pandas, Scipy, Sklearn
 * MatplotLib, Seaborn, Plotly
-* Tweepy
 
 <img src="/visualizations/tech.png"/>
 
+
+# Exploratory Data Analysis
+
+## Electric Vehicles Population Map
+<img src="/visualizations/scatterplotmap.png"/>
+Click here to see this interactive map: https://karenlo08.github.io/EV/
+
+## Top 3 WA Electric Vehicles by Year
+
+<img src="/visualizations/top3.png"/>
+
 ## Hypothesis Testing
 #### Does a higher income or lower income relates to having more or less electric cars?  Higher commutes times can be a contribuitor to buy a electric car?
-
 
 ```
 H0: There is no statiscally significant relationship between household income level/commute times and the number of electric vehicles by zip code.
 HA: There is a statiscally significant relationship between household income level/commute times and the number of electric vehicles by zip code.
 Significance level: 0.05
 ```
-
 Normalize the median income data/median commute time and total E.V. population data to be comparable between each other.
-
 
 ```python
 def normalize(df,column):
@@ -46,7 +55,6 @@ def normalize(df,column):
     df[cols_to_norm] = StandardScaler().fit_transform(df[cols_to_norm])
     return df
 ```
-
 
 ```python
 median_income_norm = normalize(ev,'median_income')
@@ -67,13 +75,11 @@ print(median_commute_norm[:3])
 
 Next, calculate a Pearson correlation coefficient and the p-value for testing non-correlation.
 
-
 ```python
 def pearsonr(x,y,alpha=0.05):
     r, p = stats.pearsonr(x,y)
     return r,p
 ```
-
 
 ```python
 print(pearsonr(median_income_norm['median_income'].values,median_income_norm['Total_EV'].values))
@@ -88,19 +94,11 @@ print(pearsonr(median_income_norm['Median_commute'].values,median_income_norm['T
 
 2. There is a weak negative correlation between commute times and getting an electric car. Also, the p-value is greater than our alpha, so we fail to reject the Null hypothesis.
 
-<img src="/visualizations/correlation_table.jpg"/>
-
-# Exploratory Data Analysis
-
-## Electric Vehicles Population Map
-https://karenlo08.github.io/EV/
-
-
-## Top 3 WA Electric Vehicles by Year
-
-<img src="/visualizations/top3.png"/>
+<img src="/visualizations/correlation_table.png"/>
 
 # Why people are choosing Tesla and Nissan Leaf? 
+
+Through the implementation of Natural Language processing
 
 ## Cars.com Buyer's Reviews Analysis
 
