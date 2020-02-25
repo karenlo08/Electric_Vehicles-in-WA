@@ -15,7 +15,7 @@
 
 
 ## Inspiration
-There is 53,818 electric vehicles registered in WA state. This exploratory data analysis tries to understand who are the E.V costumers and identify possible electric vehicles buyers.  To accomplish this, I needed to understand the EV most populated zip codes with their respective demographic data. I focus on household income level and commutes times: Does tend to own an electric car is correlated to how much a household earn and how much a household commute to work?
+There is 53,818 electric vehicles registered in WA state. This exploratory data analysis tries to understand This exploratory data analysis tries to understand E.V costumers and identify potential E.V buyers. To accomplish this, I needed to understand the EV most populated zip codes with their respective demographic data. I focus on household income level and commutes times: Does tend to own an electric car is correlated to how much a household earn and how much a household commute to work?
 
 
 ## Technologies and Data Sources
