@@ -19,7 +19,7 @@ There is 53,818 electric vehicles registered in WA state. This exploratory data 
 
 
 ## Technologies and Data Sources
-* S3, Boto3
+* S3, Boto3 
 * Tweepy
 * NLTK, TextBlob
 * Numpy, Pandas, Scipy, Sklearn
