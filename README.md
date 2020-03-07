@@ -95,7 +95,7 @@ print(pearsonr(median_income_norm['Median_commute'].values,median_income_norm['T
 <img src="/visualizations/correlation_table.png"/>
 
 # Why people are choosing Tesla and Nissan Leaf? 
-During my analysis I wanted to know why E.V drivers were choosing certain models over others and how were they reacting about their products through tweets and reviews. In this section, I web scrapped cars.com to obtain reviews from Tesla and Leaf, whom were the most popular E.V in WA. Also, I create a connector to Twitter API to get tweets from a @GreenCarsReports, an account where electric cars news are posted. The goal was recognize the polarity of the reviews, set a threshold and classify them in bad, good or neutral.
+During my analysis I wanted to know why E.V drivers were choosing certain models over others and how were they reacting about their products through tweets and reviews. For this section, I web scrapped cars.com to obtain reviews from Tesla and Leaf, the most popular Electric Vehicles in WA. Also, I created a connector to Twitter API to get tweets from @GreenCarsReports, an account where electric cars news are posted. The goal was recognize the polarity of the reviews, set a threshold and classify them in bad, good or neutral.
 
 ## @GreenCarReports Tweets Analysis
 
