@@ -1,5 +1,5 @@
 
-# Electric Vehicles in WA: Exploratory Data Analysis and NLP through Sentiment Analysis.
+# Electric Vehicles in WA: Exploratory Data Analysis and NLP through Sentiment Analysis. 
 
 ## Table of contents
 - [Inspiration](#general-info)
