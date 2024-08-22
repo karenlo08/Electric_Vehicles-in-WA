@@ -1,6 +1,6 @@
 from nltk.probability import FreqDist
 from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
+from nltk.corpus import stopwords 
 
 from wordcloud import WordCloud
 from PIL import Image
