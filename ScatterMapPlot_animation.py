@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pd 
 import plotly.graph_objects as go
 mapbox_access_token = 'pk.eyJ1Ijoia2FyZW52YXJnYXNseXUwOCIsImEiOiJjazRubnRxbXIwdWpxM21xeXV4OHFjc3N0In0.FVcUnql3bnxVxNyBRnaZmw'
 
